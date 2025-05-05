@@ -1,10 +1,12 @@
 from django.db import models
 from django.utils.text import slugify
 
+
 class Artist(models.Model):
     first_name = models.CharField(max_length=255)
     last_name = models.CharField(max_length=255)
     created_at = models.DateTimeField(auto_now_add=True)
+
 
 class Hit(models.Model):
     title = models.CharField(max_length=255)
